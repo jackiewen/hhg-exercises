@@ -3,8 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'sudo npm install'
-                sh 'sudo npm run build'
+                sh 'cd /var/lib/jenkins/workspace/ReactJS_master/'
+                sh 'npm install'
+                sh 'npm run build'
             }
         }
     }
